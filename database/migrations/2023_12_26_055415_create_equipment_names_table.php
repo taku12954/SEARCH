@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('equipment_names', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('title');
         });
     }
 
@@ -29,3 +29,4 @@ return new class extends Migration
         Schema::dropIfExists('equipment_names');
     }
 };
+
